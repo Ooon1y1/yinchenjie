@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvischk01a023"]
+
+[ext_resource type="Script" path="res://Scripts/test/visual_check.gd" id="1"]
+
+[node name="VisualCheck" type="Node"]
+script = ExtResource("1")

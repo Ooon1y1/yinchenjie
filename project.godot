@@ -1,0 +1,52 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="隐尘劫"
+config/description="2D 横版像素武侠动作 Roguelike — P0 可玩 Demo"
+run/main_scene="res://Scenes/UI/menu_main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+EventBus="*res://Scripts/Autoload/event_bus.gd"
+GameManager="*res://Scripts/Autoload/game_manager.gd"
+BuffManager="*res://Scripts/Autoload/buff_manager.gd"
+AudioManager="*res://Scripts/Autoload/audio_manager.gd"
+PoolManager="*res://Scripts/Autoload/pool_manager.gd"
+MCPGameBridge="res://addons/godot_mcp/game_bridge/mcp_game_bridge.gd"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/window_width_override=1920
+window/size/window_height_override=1080
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_mcp/plugin.cfg")
+
+[godot_mcp]
+
+bind_mode=0
+custom_bind_ip=""
+port_override_enabled=false
+port_override=6550
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scripts/boss_xuanfeng.gd" id="1_b"]
+
+[node name="BossBilv" type="CharacterBody2D"]
+script = ExtResource("1_b")
+boss_id = "boss_bilv"

@@ -1,0 +1,15 @@
+# Godot 4 缓存目录
+.godot/
+*.tmp
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# 临时调试文件
+.tmp_debug/
+.screenshots/
+
+# 引擎导出产物
+build/
+export/
